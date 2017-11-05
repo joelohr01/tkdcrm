@@ -27,7 +27,7 @@
                             <tbody>
                                 @foreach($clients as $client)
                                     <tr>
-                                        <td><a href="{{ route('clients.show', $client-id) }}">{{$client->name}}</a></td>
+                                        <td><a href="{{ route('clients.show', $client->id) }}">{{$client->name}}</a></td>
                                         <td>{{ $client->contact_name }}</td>
                                         <td>{{ $client->contact_phone }}</td>
                                         <td><a href="mailto:{{ $client->contact_email }}">{{ $client->contact_email }}</a></td>

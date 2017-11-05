@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'TurnKey Digital CRM') }}</title>
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -64,6 +64,12 @@
                                         </form>
                                     </li>
                                 </ul>
+                            </li>
+                            <li>
+                                <a href="{{ url('clients') }}">Clients</a>
+                            </li>
+                            <li>
+                                <a href="{{ url('clients/create') }}">New Client</a>
                             </li>
                         @endguest
                     </ul>
